@@ -3,12 +3,12 @@ layout: default
 ---
 # By: Khaled
 
-<div align="center">
+<div align="center" dir="rtl>
 ##Week1
 المسابقه رقم ١
 * * *
 
-![GitHub Logo](/media/theme_1.jpeg style=centerme)
+![Theme 1](./media/theme_1.jpeg)
 
 الثيم لهالمسابقه: افلام الكرتون القديمة 
 
