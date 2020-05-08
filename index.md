@@ -2,10 +2,12 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to Quiz1](./quiz1.html).
-[Link to Quiz2](./quiz2.html).
+[المسابقه رقم ١](./quiz1.html).
+
+[المسابقه رقم ٢]().
+
+[المسابقه رقم ٣]().
 
 There should be whitespace between paragraphs.
 
