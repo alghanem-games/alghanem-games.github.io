@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-# By: Khaled
-
 
 ## Week1
 
@@ -35,6 +33,8 @@ layout: default
 <a href="./quiz1.html">رابط المسابقه</a>
 </p>
 </div>
+
+<br>
 
 * * *
 
