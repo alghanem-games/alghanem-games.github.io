@@ -35,8 +35,6 @@ layout: default
 </div>
 
 
-</div>
-
 ## Week2
 
 #### المسابقه رقم ٢
