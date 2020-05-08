@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-
+# نبذه
 
 [المسابقه رقم ١](./quiz1.html).
 
-[المسابقه رقم ٢]().
+[المسابقه رقم ٢ قريبا ...]().
 
-[المسابقه رقم ٣]().
+[المسابقه رقم ٣ قريبا ...]().
 
 There should be whitespace between paragraphs.
 
