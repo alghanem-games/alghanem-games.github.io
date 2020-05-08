@@ -4,7 +4,8 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./quiz1.html).
+[Link to Quiz1](./quiz1.html).
+[Link to Quiz2](./quiz2.html).
 
 There should be whitespace between paragraphs.
 
