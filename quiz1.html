@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Quiz 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Quiz {
+            border-style: groove;
+            width: 60%;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <form>
+        <div class="Quiz">
+            1<br />
+            <audio controls>
+                <source src="media/1_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div>
+                <input type="text" id="1">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/1.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group1" value="wrong"> خطأ <br>
+                    <input id="answer" type="radio" name="group1" value="correct"> صح<br>
+                </div>
+            </div>
+
+        </div>
+        <div class="Quiz">
+            2<br />
+            <audio controls>
+                <source src="media/2_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div>
+                <input type="text" id="2">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/2.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group2" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group2" value="correct"> صح<br>
+                </div>
+            </div>
+
+        </div>
+        <div class="Quiz">
+            3<br />
+            <audio controls>
+                <source src="media/3_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/3.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group3" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group3" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            4<br />
+            <audio controls>
+                <source src="media/4_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/4.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group4" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group4" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            5<br />
+            <audio controls>
+                <source src="media/5_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/5.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group5" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group5" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            6<br />
+            <audio controls>
+                <source src="media/6_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/6.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group6" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group6" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            7<br />
+            <audio controls>
+                <source src="media/7_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/7.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group7" value="wrong">خطأ<br>
+                    <input id="answer" type="radio" name="group7" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            8<br />
+            <audio controls>
+                <source src="media/8_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/8.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group8" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group8" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            9<br />
+            <audio controls>
+                <source src="media/9_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/9.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group9" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group9" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            10<br />
+            <audio controls>
+                <source src="media/10_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/10.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group10" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group10" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            11<br />
+            <audio controls>
+                <source src="media/11_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/11.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group11" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group11" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            12<br />
+            <audio controls>
+                <source src="media/12_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/12.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group12" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group12" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            13<br />
+            <audio controls>
+                <source src="media/13_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/13.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group13" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group13" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            14<br />
+            <audio controls>
+                <source src="media/14_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/14.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group14" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group14" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            15<br />
+            <audio controls>
+                <source src="media/15_e.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <input type="text" id="3">
+                <div class="answers" style="display:none">
+                    <br>
+                    <img src="media/15.jpeg" width="160" height="160" /><br>
+                    اجابتك؟<br>
+                    <input id="answer" type="radio" name="group15" value="wrong"> خطأ<br>
+                    <input id="answer" type="radio" name="group15" value="correct"> صح<br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="buttons">
+            <button class="buttons" type="button" onclick="myFunction()">Try it</button>
+        </div>
+    </form>
+
+    <div class="buttons" >
+        <button class="buttons" onclick="return handleClick();">Submit</button>
+    </div>
+
+
+    <script>
+        function myFunction() {
+        var els = document.getElementsByClassName("answers");
+        for (var i = 0; i < els.length; ++i) {
+            var s = els[i].style;
+            s.display = s.display === 'none' ? 'block' : 'none';
+        };
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function handleClick() {
+            var amountCorrect = 0;
+            for (var i = 1; i <= 45; i++) {
+                var radios = document.getElementsByName('group' + i);
+                for (var j = 0; j < radios.length; j++) {
+                    var radio = radios[j];
+                    if (radio.value == "correct" && radio.checked) {
+                        amountCorrect++;
+                    }
+                }
+            }
+            alert("Correct Responses: " + amountCorrect);
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+</body>
+</html>
