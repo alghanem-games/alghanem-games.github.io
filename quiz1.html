@@ -15,6 +15,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 16px;
+            padding: 15px 32px;
+        }
+
+        .buttonsRes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            padding: 15px 32px;
+            background-color: #4CAF50;
         }
 
         .Quiz {
@@ -32,7 +44,7 @@
 
     <form>
         <div class="Quiz">
-            السؤال الاول<br />
+            1<br />
             <audio controls>
                 <source src="media/1_e.mov" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -392,8 +404,8 @@
         </div>
     </form>
 
-    <div class="buttons" style="display:none" id="res_btn">
-        <button class="buttons" onclick="return handleClick();">احسب نتيجتك</button>
+    <div style="display:none" id="res_btn">
+        <button class="buttonsRes" onclick="return handleClick();">احسب نتيجتك</button>
     </div>
 
 
@@ -434,7 +446,7 @@
                     }
                 }
             }
-            alert("الاجوبه الصحيحه من 15:" + amountCorrect);
+            alert("الاجوبه الصحيحه" + amountCorrect);
         }
 
         function topFunction() {
