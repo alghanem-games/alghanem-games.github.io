@@ -2,14 +2,12 @@
 layout: default
 ---
 
-## Week1
-
-#### المسابقه رقم ١
+<center> <h1>المسابقه رقم ١</h1> </center>
 
 * * *
 
 <p align="center"> 
-<img src="./media/theme_1.jpeg">
+<img src="./media/week1/theme_1.jpeg">
 </p>
 
 <p style="text-align:center" dir="rtl">
@@ -38,11 +36,45 @@ layout: default
 
 * * *
 
-## Week2
-
-#### المسابقه رقم ٢
+<center> <h1>المسابقه رقم ٢</h1> </center>
 
 * * *
 
-Soon ...
+<p align="center"> 
+<img src="./media/week2/theme.jpeg">
+</p>
+
+<p style="text-align:center" dir="rtl">
+
+
+<div dir="RTL">
+الثيم لهالمسابقه: قراء القرآن الكريم
+<br>
+طريقة المسابقة:
+<ul>
+  <li>تسمع لمقطع قصير لقارئ معروف</li>
+  <li>اختر توقعك من الخيارات المحدده</li>
+  <li>بعد اكمال الخيارات اضغط على زر "احسب نتيجتك" لحساب نتيجتك النهائيه</li>
+</ul> 
+<p align="center"> 
+هالمره خليتها خيارات عشان تكون اسهل بعد ما شفت نتايج المسابقه الاولى&#x1F605;<br>
+بس هالمره فيه وقت محدد لاكمال الاجابات
+<br>
+عدد الاسئله ١٠ و الوقت ٥ دقايق
+<br>
+لتخفيف الضغط: ما اتحداك فيصل <br>
+<a href="./quiz2.html">رابط المسابقه</a>
+</p>
+</div>
+
+<br>
+
+* * *
+
+<center> <h1>المسابقه رقم ٣</h1> </center>
+
+* * *
+
+<center> Coming soon ...</center>
+
 

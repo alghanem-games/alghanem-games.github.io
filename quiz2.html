@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+        
+        body {
+                background: #ece4d8;
+                
+                -webkit-font-smoothing: antialiased;
+            }
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            padding: 15px 32px;
+        }
+
+        .buttonsRes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            padding: 15px 32px;
+            background-color: #EE7B7B;
+        }
+    
+        .hidden {
+             display: none;
+        }
+
+        .Quiz {
+            border-style: groove;
+            width: 60%;
+            padding: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        #Results {
+            background-color: #EE7B7B;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        #quiz-time-lef {
+            position: fixed;
+        }
+        
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 88px;
+            z-index: 10;
+            background: #EE7B7B;
+            -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+            -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+            }
+
+        #quiz-time-left {
+            text-align: center;
+            padding: 15px 20px;
+        }
+        
+        .hidden{ display: none; }
+        
+    </style>
+    
+</head>
+<body>
+
+    <form>
+        <div id = "Results" style="display:none">
+            <h1> عدد الاجابات الصحيحه</h1>
+            <h1 id="FinalResult"></h1>
+        </div>
+        
+        
+        
+        <div id="header" style="display:block">
+            <h1 id="quiz-time-left">
+            
+            </h1>
+        </div>
+        
+        <div class="Quiz">
+            1<br />
+            <audio controls>
+                <source src="media/week2/1.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    عبدالرحمن السديس
+                    <br>
+                    <img src="media/week2/1.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group1" value="wrong"> ابراهيم الجبرين <br>
+                    <input id="answer" type="radio" name="group1" value="correct"> عبدالرحمن السديس<br>
+                    <input id="answer" type="radio" name="group1" value="wrong"> جمعان العصيمي<br>
+                
+            </div>
+
+        </div>
+        <div class="Quiz">
+            2<br />
+            <audio controls>
+                <source src="media/week2/2.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    سعود الشريم<br>
+                    <img src="media/week2/2.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group2" value="wrong"> عبدالله البريمي <br>
+                    <input id="answer" type="radio" name="group2" value="wrong"> صلاح الهاشم<br>
+                    <input id="answer" type="radio" name="group2" value="correct"> سعود الشريم<br>
+                
+            </div>
+
+        </div>
+        <div class="Quiz">
+            3<br />
+            <audio controls>
+                <source src="media/week2/3.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    ياسر الدوسري<br>
+                    <img src="media/week2/3.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group3" value="wrong"> محمود الشيمي <br>
+                    <input id="answer" type="radio" name="group3" value="correct"> ياسر الدوسري<br>
+                    <input id="answer" type="radio" name="group3" value="wrong"> توفيق الصايغ<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            4<br />
+            <audio controls>
+                <source src="media/week2/4.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    عبدالباسط عبدالصمد<br>
+                    <img src="media/week2/4.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group4" value="wrong"> عبد الفتاح الشعشاعي <br>
+                    <input id="answer" type="radio" name="group4" value="wrong"> محمد صديق المنشاوي<br>
+                    <input id="answer" type="radio" name="group4" value="correct"> عبدالباسط عبدالصمد<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            5<br />
+            <audio controls>
+                <source src="media/week2/5.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    ماهر المعيقلي<br>
+                    <img src="media/week2/5.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group5" value="wrong"> مشاري العفاسي <br>
+                    <input id="answer" type="radio" name="group5" value="wrong"> محمد البراك<br>
+                    <input id="answer" type="radio" name="group5" value="correct"> ماهر المعيقلي<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            6<br />
+            <audio controls>
+                <source src="media/week2/6.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    أحمد العجمي<br>
+                    <img src="media/week2/6.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group6" value="correct"> أحمد العجمي <br>
+                    <input id="answer" type="radio" name="group6" value="wrong"> سلمان العتيبي<br>
+                    <input id="answer" type="radio" name="group6" value="wrong"> سعد الغامدي<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            7<br />
+            <audio controls>
+                <source src="media/week2/7.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    خالد الجليل<br>
+                    <img src="media/week2/7.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group7" value="wrong"> خالد القحطاني <br>
+                    <input id="answer" type="radio" name="group7" value="correct"> خالد الجليل<br>
+                    <input id="answer" type="radio" name="group7" value="wrong"> خالد الوهيبي<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            8<br />
+            <audio controls>
+                <source src="media/week2/8.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    خالد الغامدي<br>
+                    <img src="media/week2/8.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group8" value="correct"> خالد الغامدي <br>
+                    <input id="answer" type="radio" name="group8" value="wrong"> صالح آل طالب<br>
+                    <input id="answer" type="radio" name="group8" value="wrong"> عبد الهادي الكردي<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            9<br />
+            <audio controls>
+                <source src="media/week2/9.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    ناصر القطامي<br>
+                    <img src="media/week2/9.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group9" value="wrong"> مشاري العفاسي <br>
+                    <input id="answer" type="radio" name="group9" value="wrong"> محمد البراك<br>
+                    <input id="answer" type="radio" name="group9" value="correct"> ناصر القطامي<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            10<br />
+            <audio controls>
+                <source src="media/week2/10.mov" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week2/unknown.jpeg" width="160" height="160" /><br>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    محمد السبيل<br>
+                    <img src="media/week2/10.jpeg" width="160" height="160" /><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group10" value="wrong"> محمد بن عثيمين <br>
+                    <input id="answer" type="radio" name="group10" value="correct"> محمد السبيل<br>
+                    <input id="answer" type="radio" name="group10" value="wrong"> عبدالله الخليفي<br>
+                
+            </div>
+
+
+        </div>
+
+        <div class="buttons" id="res_btn">
+        <button class="buttonsRes" type="button" onclick="handleClick()">احسب نتيجتك</button>
+    </div>
+    </form>
+    
+    
+
+    
+
+
+    <script>
+        var btn_press = 0;
+        function myFunction() {
+            var els = document.getElementsByClassName("answers");
+        for (var i = 0; i < els.length; ++i) {
+            var s = els[i].style;
+            s.display = s.display === 'none' ? 'block' : 'none';
+            };
+
+            var els = document.getElementsByClassName("unknown_imgs");
+        for (var i = 0; i < els.length; ++i) {
+            var s = els[i].style;
+            s.display = s.display === 'none' ? 'block' : 'none';
+            };
+            
+            var x = document.getElementById("res_btn");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function handleClick() {
+            btn_press = 1;
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            
+            var els = document.getElementsByClassName("unknown_imgs");
+        for (var i = 0; i < els.length; ++i) {
+            var s = els[i].style;
+            s.display = s.display === 'none' ? 'block' : 'none';
+            };
+            
+            var els = document.getElementsByClassName("answers");
+        for (var i = 0; i < els.length; ++i) {
+            var s = els[i].style;
+            s.display = s.display === 'none' ? 'block' : 'none';
+            };
+            
+            
+            
+            var amountCorrect = 0;
+            for (var i = 1; i <= 45; i++) {
+                var radios = document.getElementsByName('group' + i);
+                for (var j = 0; j < radios.length; j++) {
+                    var radio = radios[j];
+                    if (radio.value == "correct" && radio.checked) {
+                        amountCorrect++;
+                    }
+                }
+            }
+            
+            
+            var x = document.getElementById("Results");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            
+            var x = document.getElementById("header");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            
+            document.getElementById("FinalResult").innerHTML = amountCorrect;
+            document.getElementById('res_btn').style.display = 'none';
+            
+
+            
+            
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        
+      var total_seconds = 1 * 5;
+      var c_minutes = parseInt(total_seconds / 60);
+      var c_seconds = parseInt(total_seconds % 60);
+      var timer;
+
+      function CheckTime() {
+        document.getElementById("quiz-time-left").innerHTML =
+          "Time Left: " + c_minutes + " minutes " + c_seconds + " seconds ";
+
+        if (total_seconds <= 0) {
+            if (btn_press == 1) {}
+            else {
+                handleClick();
+            }
+          
+        } else {
+          total_seconds = total_seconds - 1;
+          c_minutes = parseInt(total_seconds / 60);
+          c_seconds = parseInt(total_seconds % 60);
+          timer = setTimeout(CheckTime, 1000);
+        }
+      }
+      timer = setTimeout(CheckTime, 1000);
+        
+    </script>
+
+
+
+
+</body>
+</html>
