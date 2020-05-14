@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+        
+        body {
+                background: #ece4d8;
+                
+                -webkit-font-smoothing: antialiased;
+            }
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            padding: 15px 32px;
+        }
+
+        .buttonsRes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            padding: 15px 32px;
+            background-color: #EE7B7B;
+        }
+    
+        .hidden {
+             display: none;
+        }
+
+        .Quiz {
+            border-style: groove;
+            width: 60%;
+            padding: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        #Results {
+            background-color: #EE7B7B;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        #quiz-time-lef {
+            position: fixed;
+        }
+        
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            z-index: 10;
+            background: #EE7B7B;
+            -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+            -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+            }
+
+        #quiz-time-left {
+            text-align: center;
+            padding: 0px 0px;
+            font-size: 15px
+        }
+        
+        #ques {
+            text-align: center;
+            padding: 0px 0px;
+            font-size: 30px
+        }
+        
+        .answers {
+            text-align: center;
+            padding: 0px 0px;
+            font-size: 30px
+        }
+        
+        .hidden{ display: none; }
+        
+    </style>
+    
+</head>
+<body>
+
+    <form>
+        <div id = "Results" style="display:none">
+            <h1> عدد الاجابات الصحيحه</h1>
+            <h1 id="FinalResult"></h1>
+        </div>
+        
+        
+        
+        <div id="header" style="display:block">
+            <h1 id="quiz-time-left">
+            
+            </h1>
+        </div>
+        
+        <div class="Quiz">
+            1<br />
+            
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/1.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">غزو الكويت</p>
+                    
+                </div>
+                
+                <div class="answers" style="display:none">
+                    1990 - 1411<br><br>
+                </div>
+               
+                    
+                    <input id="answer" type="radio" name="group1" value="wrong">1988 - 1409<br>
+                    <input id="answer" type="radio" name="group1" value="correct">1990 - 1411<br>
+                    <input id="answer" type="radio" name="group1" value="wrong">1992 - 1413<br>
+                
+            </div>
+
+        </div>
+        <div class="Quiz">
+            2<br />
+            
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/2.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">اعلان رؤية 2030</p>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    2016 - 1443<br><br>
+                </div>
+                
+                
+                    
+                    <input id="answer" type="radio" name="group2" value="correct">2016 - 1443<br>
+                    <input id="answer" type="radio" name="group2" value="wrong">2017 - 1444<br>
+                    <input id="answer" type="radio" name="group2" value="wrong">2018 - 1445<br>
+                
+            </div>
+
+        </div>
+        <div class="Quiz">
+            3<br />
+            
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/3.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">هدف سعيد العويران في بلجيكا</p>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    1994 - 1415<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group3" value="correct">1994 - 1415<br>
+                    <input id="answer" type="radio" name="group3" value="wrong">1996 - 1417<br>
+                    <input id="answer" type="radio" name="group3" value="wrong">1998 - 1419<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            4<br />
+            
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/4.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">طفرة الزئبق الاحمر في مكائن الخياطة</p>
+                </div>
+                <div class="answers" style="display:none">
+                    2009 - 1430<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group4" value="wrong">2005 - 1426<br>
+                    <input id="answer" type="radio" name="group4" value="wrong">2007 - 1428<br>
+                    <input id="answer" type="radio" name="group4" value="correct">2009 - 1430<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            5<br />
+            
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/5.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">اقتحام الحرم المكي</p>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    1979 - 1400<br><br>
+                </div>
+                    <input id="answer" type="radio" name="group5" value="correct">1979 - 1400<br>
+                    <input id="answer" type="radio" name="group5" value="wrong">1982 - 1403<br>
+                    <input id="answer" type="radio" name="group5" value="wrong">1985 - 1406<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            6<br />
+            
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/6.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">حادثة سيول جدة</p>
+                </div>
+                
+                <div class="answers" style="display:none">
+                    2009 - 1430<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group6" value="wrong">2005 - 1426<br>
+                    <input id="answer" type="radio" name="group6" value="wrong">2007 - 1428<br>
+                    <input id="answer" type="radio" name="group6" value="correct">2009 - 1430<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            7<br />
+            
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/7.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">أول بئر نفط اكتشف في المملكة العربية السعودية</p>
+                </div>
+                
+               <div class="answers" style="display:none">
+                    1938 - 1357<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group7" value="correct">1938 - 1357<br>
+                    <input id="answer" type="radio" name="group7" value="wrong">1948 - 1367<br>
+                    <input id="answer" type="radio" name="group7" value="wrong">1958 - 1377<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            8<br />
+           
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/8.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">اكتمال بناء برج الفيصلية (اول ناطحة سحاب بالسعودية)ا</p>
+                </div>
+                <div class="answers" style="display:none">
+                    2000- 1421<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group8" value="correct">2000 - 1421<br>
+                    <input id="answer" type="radio" name="group8" value="wrong">2002 - 1423<br>
+                    <input id="answer" type="radio" name="group8" value="wrong">2004 - 1425<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            9<br />
+            
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/9.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">ترسيم لقب خادم الحرمين الشريفين</p>
+                </div>
+              <div class="answers" style="display:none">
+                    1986 - 1406<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group9" value="wrong">1966 - 1386<br>
+                    <input id="answer" type="radio" name="group9" value="wrong">1976 - 1396<br>
+                    <input id="answer" type="radio" name="group9" value="correct">1986 - 1406<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            10<br />
+           
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/10.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">حادثة حظر امداد النفط لأمريكا</p>
+                </div>
+                <div class="answers" style="display:none">
+                    1973 - 1393<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group10" value="wrong">1970 - 1390<br>
+                    <input id="answer" type="radio" name="group10" value="correct">1973 - 1393<br>
+                    <input id="answer" type="radio" name="group10" value="wrong">1976 - 1396<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            11<br />
+           
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/11.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">وفاة مفتي المملكة الشيخ محمد بن باز رحمه الله</p>
+                </div>
+                <div class="answers" style="display:none">
+                    1999 - 1420<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group11" value="wrong">1996 - 1417<br>
+                    <input id="answer" type="radio" name="group11" value="correct">1999 - 1420<br>
+                    <input id="answer" type="radio" name="group11" value="wrong">2002 - 1423<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            12<br />
+           
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/12.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">نهاية مسلسل طاش ما طاش</p>
+                </div>
+                <div class="answers" style="display:none">
+                    2011 - 1432<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group12" value="correct">2011 - 1432<br>
+                    <input id="answer" type="radio" name="group12" value="wrong">2013 - 1434<br>
+                    <input id="answer" type="radio" name="group12" value="wrong">2015 - 1436<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            13<br />
+           
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/13.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">اعتماد النشيد الوطني السعودي</p>
+                </div>
+                <div class="answers" style="display:none">
+                    1984 - 1404<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group13" value="wrong">1964 - 1384<br>
+                    <input id="answer" type="radio" name="group13" value="wrong">1974 - 1394<br>
+                    <input id="answer" type="radio" name="group13" value="correct">1984 - 1404<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            14<br />
+           
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/14.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">اكتمال بناء الجسر المعلق بالرياض</p>
+                </div>
+                <div class="answers" style="display:none">
+                    2000 - 1411<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group14" value="correct">2000 - 1420<br>
+                    <input id="answer" type="radio" name="group14" value="wrong">2002 - 1422<br>
+                    <input id="answer" type="radio" name="group14" value="wrong">2004 - 1424<br>
+                
+            </div>
+
+
+        </div>
+        <div class="Quiz">
+            15<br />
+           
+
+            <div>
+                
+                <div class="unknown_imgs" style="display:block">
+                    <img src="media/week3/15.jpeg" width="300" height="300" /><br>
+                    <p id = "ques">اعلان قرار حق القيادة للمرأة</p>
+                </div>
+                <div class="answers" style="display:none">
+                    2017 - 1437<br><br>
+                </div>
+                    
+                    <input id="answer" type="radio" name="group15" value="wrong">2016 - 1436<br>
+                    <input id="answer" type="radio" name="group15" value="correct">2017 - 1437<br>
+                    <input id="answer" type="radio" name="group15" value="wrong">2018 - 1438<br>
+                
+            </div>
+
+
+        </div>
+
+        <div class="buttons" id="res_btn">
+        <button class="buttonsRes" type="button" onclick="handleClick()">احسب نتيجتك</button>
+    </div>
+    </form>
+    
+    
+
+    
+
+
+    <script>
+        var btn_press = 0;
+        function myFunction() {
+            var els = document.getElementsByClassName("answers");
+        for (var i = 0; i < els.length; ++i) {
+            var s = els[i].style;
+            s.display = s.display === 'none' ? 'block' : 'none';
+            };
+
+            
+            var x = document.getElementById("res_btn");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function handleClick() {
+            btn_press = 1;
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            
+            
+            
+            var els = document.getElementsByClassName("answers");
+        for (var i = 0; i < els.length; ++i) {
+            var s = els[i].style;
+            s.display = s.display === 'none' ? 'block' : 'none';
+            };
+            
+            
+            
+            var amountCorrect = 0;
+            for (var i = 1; i <= 45; i++) {
+                var radios = document.getElementsByName('group' + i);
+                for (var j = 0; j < radios.length; j++) {
+                    var radio = radios[j];
+                    if (radio.value == "correct" && radio.checked) {
+                        amountCorrect++;
+                    }
+                }
+            }
+            
+            
+            var x = document.getElementById("Results");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            
+            var x = document.getElementById("header");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            
+            document.getElementById("FinalResult").innerHTML = amountCorrect;
+            document.getElementById('res_btn').style.display = 'none';
+            
+
+            
+            
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        
+      var total_seconds = 60 * 5;
+      var c_minutes = parseInt(total_seconds / 60);
+      var c_seconds = parseInt(total_seconds % 60);
+      var timer;
+
+      function CheckTime() {
+        document.getElementById("quiz-time-left").innerHTML =
+          "Time Left: " + c_minutes + " minutes " + c_seconds + " seconds ";
+
+        if (total_seconds <= 0) {
+            if (btn_press == 1) {}
+            else {
+                handleClick();
+            }
+          
+        } else {
+          total_seconds = total_seconds - 1;
+          c_minutes = parseInt(total_seconds / 60);
+          c_seconds = parseInt(total_seconds % 60);
+          timer = setTimeout(CheckTime, 1000);
+        }
+      }
+      timer = setTimeout(CheckTime, 1000);
+        
+    </script>
+
+
+
+
+</body>
+</html>

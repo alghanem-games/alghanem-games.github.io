@@ -75,6 +75,31 @@ layout: default
 
 * * *
 
-<center> Coming soon ...</center>
+<p align="center"> 
+<img src="./media/week3/theme.jpeg" width="280" height="189">
+</p>
+
+<p style="text-align:center" dir="rtl">
+
+
+<div dir="RTL">
+الثيم لهالمسابقه: احداث مهمه بتاريخ السعودية
+<br>
+طريقة المسابقة:
+<ul>
+  <li>صوره لحدث مهم بتاريخ السعوديه مع ذكر الحدث</li>
+  <li>اختر توقعك من الخيارات المحدده لسنة وقوع الحدث</li>
+  <li>بعد اكمال الخيارات اضغط على زر "احسب نتيجتك" لحساب نتيجتك النهائيه</li>
+</ul> 
+<p align="center"> 
+عدد الاسئله ١٥ و الوقت ٥ دقايق
+<br>
+<a href="./quiz3.html">رابط المسابقه</a>
+</p>
+</div>
+
+<br>
+
+* * *
 
 
