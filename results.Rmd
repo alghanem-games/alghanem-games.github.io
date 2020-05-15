@@ -1,0 +1,29 @@
+---
+title: "Results"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F)
+
+library(dplyr)
+library(reactable)
+
+
+res <- readxl::read_xlsx("data/res.xlsx")
+```
+
+```{r cars}
+
+
+reactable(arrange(res, desc(Total)),
+          defaultColDef = colDef(
+                #header = function(value) gsub("\\w+>", "kjn", value, fixed = TRUE),
+                cell = function(value) format(value, nsmall = 0),
+                align = "center",
+                minWidth = 70,
+                headerStyle = list(background = "#f7f7f8")
+              )
+          
+          )
+```
