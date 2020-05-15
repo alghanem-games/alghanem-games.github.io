@@ -37,7 +37,7 @@ layout: default
 <hr>
 
 <center> <h1>المسابقه رقم ٢</h1> </center>
-
+<br>
 <hr> 
 
 <p align="center"> 
@@ -72,7 +72,7 @@ layout: default
 <hr> 
 
 <center> <h1>المسابقه رقم ٣</h1> </center>
-
+<br>
 <hr> 
 
 <p align="center"> 
@@ -103,7 +103,7 @@ layout: default
 <hr>
 
 <center> <h1>المسابقه رقم ٤</h1> </center>
-
+<br>
 <hr> 
 
 Coming soon ...
