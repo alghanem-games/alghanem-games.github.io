@@ -20,7 +20,6 @@ reactable(arrange(res, desc(Total)),
                 #header = function(value) gsub("\\w+>", "kjn", value, fixed = TRUE),
                 cell = function(value) format(value, nsmall = 0),
                 align = "center",
-                minWidth = 70,
                 headerStyle = list(background = "#f7f7f8"),
                 resizable = T
               ),
