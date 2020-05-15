@@ -21,8 +21,13 @@ reactable(arrange(res, desc(Total)),
                 cell = function(value) format(value, nsmall = 0),
                 align = "center",
                 minWidth = 70,
-                headerStyle = list(background = "#f7f7f8")
-              )
+                headerStyle = list(background = "#f7f7f8"),
+                resizable = T
+              ),
+          
+          columns = list(
+            Name = colDef(align = "left")
+          )
           
           )
 ```
