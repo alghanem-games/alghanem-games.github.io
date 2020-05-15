@@ -19,13 +19,20 @@ reactable(arrange(res, desc(Total)),
           defaultColDef = colDef(
                 #header = function(value) gsub("\\w+>", "kjn", value, fixed = TRUE),
                 cell = function(value) format(value, nsmall = 0),
+                resizable = T,
                 align = "center",
-                headerStyle = list(background = "#f7f7f8"),
-                resizable = T
+                headerStyle = list(background = "#f7f7f8")
               ),
           
           columns = list(
-            Name = colDef(align = "left")
+            Name = colDef(align = "left", maxWidth = 150),
+            `1` = colDef(maxWidth = 50),
+            `2` = colDef(maxWidth = 50),
+            `3` = colDef( maxWidth = 50),
+            `4` = colDef(maxWidth = 50),
+            `5` = colDef(maxWidth = 50),
+            Total = colDef( maxWidth = 50)
+           
           )
           
           )
