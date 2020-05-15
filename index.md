@@ -34,11 +34,11 @@ layout: default
 
 <br>
 
-* * *  
+<hr>
 
 <center> <h1>المسابقه رقم ٢</h1> </center>
 
-* * *  
+<hr> 
 
 <p align="center"> 
 <img src="./media/week2/theme.jpeg">
@@ -69,11 +69,11 @@ layout: default
 
 <br>
 
-* * *  
+<hr> 
 
 <center> <h1>المسابقه رقم ٣</h1> </center>
 
-* * *  
+<hr> 
 
 <p align="center"> 
 <img src="./media/week3/theme.jpeg" width="280" height="189">
@@ -100,6 +100,11 @@ layout: default
 
 <br>
 
-* * *
+<hr>
 
+<center> <h1>المسابقه رقم ٤</h1> </center>
+
+<hr> 
+
+Coming soon ...
 
